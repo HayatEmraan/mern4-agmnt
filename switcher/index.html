@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-1">Change Image 1</button>
+    <button id="btn-2">Change Image 2</button>
+    <img width="500" src="./images/img1.jpg" alt="" />
+
+    <script>
+      const btn1 = document.getElementById("btn-1");
+      const btn2 = document.getElementById("btn-2");
+      const img = document.getElementsByTagName("img")[0];
+
+      btn1.addEventListener("click", () => {
+        img.src = "./images/img1.jpg";
+      });
+      btn2.addEventListener("click", () => {
+        img.src = "./images/img2.jpg";
+      });
+    </script>
+  </body>
+</html>
